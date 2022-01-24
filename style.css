@@ -1,0 +1,28 @@
+/* 2* */
+.container {
+    position: relative;
+    text-align: center;
+    
+    color: violet; 
+}
+
+/* 2* */
+/* .top-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+} */
+
+/* 2 */
+/* .bottom-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}  */
+
+
+#tif {
+    position: relative;
+    align-items: center;
+    width: 75%;
+}
