@@ -1,8 +1,13 @@
+h1 {
+    position: relative;
+    text-align: center;
+}
+
 /* 2* */
 .container {
     position: relative;
     text-align: center;
-    
+
     color: violet; 
 }
 
