@@ -8,9 +8,17 @@ h1 {
     position: relative;
     text-align: center;
 
+    
+}
+
+.container {
     color: violet; 
 }
 
+.meme-img {
+    width: 75%;
+    height: 75%;
+}
 /* 2* */
 /* .top-text {
     position: absolute;
@@ -26,8 +34,8 @@ h1 {
 }  */
 
 
-#tif {
+/* #tif {
     position: relative;
     align-items: center;
     width: 75%;
-}
+} */

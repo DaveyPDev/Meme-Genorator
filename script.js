@@ -7,7 +7,7 @@ const memeUrl = document.getElementById('meme-img');
 const bodyClick = document.querySelector('body')
 
 bodyClick.addEventListener('click', function(e) {
-    console.log(e.target)
+    console.log(e)
 })
 
 memeForm.addEventListener ('submit', function(e) {
@@ -42,10 +42,11 @@ const newDivImg = document.createElement('div')
 const parentContainerImg = document.querySelector('.container')
 const memeImg = document.createElement('img')
 parentContainerImg.append(newDivImg)
-newDivImg.innerText = memeUrl.value;
-newDivImg.classList.add('meme-img')
-newDivImg.append(memeImg)
 
+memeImg.classList.add('meme-img')
+newDivImg.append(memeImg)
+memeImg.setAttribute('src', memeUrl)
+memeUrl = ''
 
 
 //    end img div    //
