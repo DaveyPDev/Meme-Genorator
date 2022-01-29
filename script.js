@@ -1,10 +1,17 @@
-// 3* //
+
 const memeForm = document.getElementById('formID')
 const topText = document.getElementById('top-text')
 const botText = document.getElementById('bot-text')
-const memeUrl = document.getElementById('img');
+const memeUrl = document.getElementById('meme-img');
+
+const bodyClick = document.querySelector('body')
+
+bodyClick.addEventListener('click', function(e) {
+    console.log(e.target)
+})
 
 memeForm.addEventListener ('submit', function(e) {
+    // 3* //
     e.preventDefault()
 //    start top text   //
 //   end top text    //
@@ -28,21 +35,26 @@ memeForm.addEventListener ('submit', function(e) {
     botText.value = '';
 });
 
-function memeGen (url, topText, botText) {
+function memeGen (memeUrl, topText, botText) {
 
 //    start img div    //
 const newDivImg = document.createElement('div')
 const parentContainerImg = document.querySelector('.container')
+const memeImg = document.createElement('img')
 parentContainerImg.append(newDivImg)
-newDivImg.innerText = 'test img'; // make it url?
+newDivImg.innerText = memeUrl.value;
 newDivImg.classList.add('meme-img')
+newDivImg.append(memeImg)
+
+
+
 //    end img div    //
 
 //   start top text div   //
 const newDivTop = document.createElement('div')
 const parentContainerTop = document.querySelector('.container')
 parentContainerTop.append(newDivTop)
-newDivTop.innerText = 'test top';
+newDivTop.innerText = topText.value;
 newDivTop.classList.add('top-text')
 //    end top text div    //
 
@@ -50,10 +62,9 @@ newDivTop.classList.add('top-text')
 const newDivBot = document.createElement('div')
 const parentContainerBot = document.querySelector('.container')
 parentContainerBot.append(newDivBot)
-newDivBot.innerText = 'test bot';
+newDivBot.innerText = botText.value;
 newDivBot.classList.add('bot-text')
 //    end bot text div    //
 
 
-input.value = ''
 };
