@@ -6,7 +6,6 @@ const memeUrl = document.getElementById('meme-img');
 const bodyClick = document.getElementById('container')
 
 bodyClick.addEventListener('click', function(e) {
-  
     if( e.target.tagName === 'BUTTON') {
         e.target.parentElement.remove();
     }
