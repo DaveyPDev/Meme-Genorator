@@ -1,28 +1,48 @@
-/* 2* */
-.container {
+h1 {
     position: relative;
     text-align: center;
-    
-    color: violet; 
 }
 
 /* 2* */
-/* .top-text {
+#formID {
+    position: relative;
+    text-align: center;
+}
+
+.container {
+    color: rgb(18, 1, 168); 
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+.meme-img {
+    position: relative;
+    width: 75%;
+    height: 75%;
+ 
+    
+}
+/* 2* */
+.top-text {
     position: absolute;
+  
+    transform: translate(-50%, -50%);
     top: 10%;
     left: 50%;
-} */
+    
+}
 
 /* 2 */
-/* .bottom-text {
+.bot-text {
     position: absolute;
     bottom: 10%;
     left: 50%;
-}  */
+    transform: translate(-50%, -50%);
+   
+} 
 
-
-#tif {
-    position: relative;
-    align-items: center;
-    width: 75%;
+.removeBtn {
+    position: absolute;
+    transform: translate(-100%, 0%);
 }
