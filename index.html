@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Meme Genorator</h1>
     <!-- 2* -->
     <!-- contains form and inputs start -->
-    <div class='container'> 
-        <form action="">
+        <form action="" id="formID">
             <!-- 1* -->
-            <!-- image text submit start -->
-            <input type="url" id="img" placeholder="Enter URL">
+            <!-- image form submit start -->
+            <label for="url">MEME Image: </label>
+            <input type="url" id="meme-img" placeholder="Enter URL">
             <br>
-            <input type="text" placeholder="Top-text">
+            <label for="text">Top-Text: </label>
+            <input type="text" placeholder="Top-text" id="top-text">
             <br>
-            <input type="text" placeholder="Bottom-text">
-            <!-- image text submit end -->
+            <label for="text">Bottom-Text: </label>
+            <input type="text" placeholder="Bottom-text" id="bot-text">
+            <!-- image form submit end -->
             <br>
             <input type="submit">
             <br>
             <!-- testing image -->
-            <img src="https://i.kym-cdn.com/photos/images/original/001/476/528/d03" alt="This is fine" id="tif">
-            <!-- image text top - bot start -->
+            <!-- <img src="https://i.kym-cdn.com/photos/images/original/001/476/528/d03" alt="This is fine" id="tif"> -->
+            <p> <label for="">test url:  </label> https://i.kym-cdn.com/photos/images/original/001/476/528/d03</p>
             
-            <div class='top-text'>Top Text</div>
-            <div class='bottom-text'>Bottom Text</div>
-            <!-- image text top - bot end -->
         </form>
-    </div>
     <!-- contains form and inputs end -->
-    <h1>Text test</h1>
+        
+    <div class='container'> 
+       
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
